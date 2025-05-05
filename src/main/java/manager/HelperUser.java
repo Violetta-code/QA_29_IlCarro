@@ -26,6 +26,7 @@ public class HelperUser extends HelperBase{
     }
 
     public void submitOk(){
-      //  click(By.xpath("//button[text()='Ok']"));
+      //  WebElement e= wd.findElement(By.xpath("//button[text()='Ok']"));
+     //  e.click();
     }
 }
