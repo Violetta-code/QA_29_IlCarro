@@ -9,7 +9,7 @@ public class LoginTests extends TestBase{
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("solodka1998@mail.ru", "Atteloiv123!");
         app.getHelperUser().submitLogin();
-        app.getHelperUser().pause(15);
+        app.getHelperUser().pause(5);
         app.getHelperUser().submitOk();
     }
 }
