@@ -12,6 +12,7 @@ public class ApplicationManager {
     public void init(){
         wd=new ChromeDriver();
         wd.navigate().to("https://ilcarro.web.app/");
+        wd.manage().window().maximize();
 
         helperUser=new HelperUser(wd);
     }

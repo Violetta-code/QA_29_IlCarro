@@ -25,7 +25,7 @@ public class HelperUser extends HelperBase{
         click(By.xpath("//button[text()='Y’alla!']"));
     }
 
-    public void submitOk(){
+    public void buttonOk(){
        click(By.xpath("//*[@class='positive-button ng-star-inserted']"));
     }
 }
