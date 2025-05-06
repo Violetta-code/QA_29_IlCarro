@@ -26,4 +26,11 @@ public class HelperBase {
         WebElement element= wd.findElement(locator);
         element.click();
     }
+    public void pause(int time) {
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

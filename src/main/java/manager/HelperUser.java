@@ -26,7 +26,6 @@ public class HelperUser extends HelperBase{
     }
 
     public void submitOk(){
-      //  WebElement e= wd.findElement(By.xpath("//button[text()='Ok']"));
-     //  e.click();
+       click(By.xpath("//*[@class='positive-button ng-star-inserted']"));
     }
 }
