@@ -28,4 +28,27 @@ public class HelperUser extends HelperBase{
     public void buttonOk(){
        click(By.xpath("//*[@class='positive-button ng-star-inserted']"));
     }
+
+    public boolean isLogged() {
+        return isElrmentPresent(By.xpath("//button[text()='Logout']"));
+    }
+
+    public void logout() {
+
+        click(By.xpath("//button[text()='Logout']"));
+    }
+
+
+    public String getMessage() {
+     //   pause(2000);
+        WebElement el2= wd.findElement(By.cssSelector(".dialog-container>h2"));
+        String text=el2.getText();
+        return text;
+      //  return wd.findElement((By.cssSelector(".dialog-container>h2"))
+    }
+
+    public String getTitle() {
+        WebElement el2= wd.findElement(By.xpath("//h1[contains(text(),'Login failed')]"));
+        return el2.getText();
+    }
 }
